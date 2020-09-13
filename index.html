@@ -6,22 +6,65 @@
         body {
             background: #fff;
         }
+
         .center {
             margin-left: auto;
             margin-right: auto;
             display: block;
         }
+
         header, footer {
             width: 100%;
-            background: grey;
             display: inline-flex;
             justify-content: space-around;
         }
+        .header-right {
+            display: inline-flex;
+            justify-content: flex-end;
+        }
+        
+        .header-left {
+            display: inline-flex;
+            justify-content: flex-start;
+        }
+
         footer {
             border-top: 1px solid #e4e4e4;
+            background: #f2f2f2;
+            position: absolute;
+            margin-top: 42vh;
         }
+
         .profile-image {
             border-radius: 50%;
+        }
+
+        #main-logo {
+            margin-top: 125px
+        }
+
+        a:link {
+        color: rgba(0,0,0,0.87);
+        text-decoration: none;
+        font-family: arial,sans-serif;
+        }
+
+        a:visited {
+        color: rgba(0,0,0,0.87);
+        text-decoration: none;
+        font-family: arial,sans-serif;
+        }
+
+        a:hover {
+        color: hotpink;
+        }
+
+        a:active {
+        color: blue;
+        }
+
+        .about {
+            padding: left 15px;
         }
 
     </style>
@@ -29,12 +72,17 @@
 <body>
     <main>
         <header>
-            <div class="about"><a href="">About</a></div>
-            <div class="store"><a href="">Store</a></div>
-            <div class="gmail"><a href="">Gmail</a></div>
-            <div class="images"><a href="">Images</a></div>
-            <div class="other-apps"><a href=""><img src="" alt="Other Apps"></a></div>
-            <div class="profile"><a href=""><img class="profile-image" src="https://lh3.googleusercontent.com/ogw/ADGmqu9Uob8gkEh9L9R76ET1SkYj7k0tJHd-JExZIZCG=s32-c-mo" alt="profile"></a></div>
+            <div class="header-left">
+                <div class="about"><a href="">About</a></div>
+                <div class="store"><a href="">Store</a></div>  
+            </div>
+            <div class="header-right">
+                <div class="gmail"><a href="">Gmail</a></div>
+                <div class="images"><a href="">Images</a></div>
+                <div class="other-apps"><a href=""><img src="" alt="Other Apps"></a></div>
+                <div class="profile"><a href=""><img class="profile-image" src="https://lh3.googleusercontent.com/ogw/ADGmqu9Uob8gkEh9L9R76ET1SkYj7k0tJHd-JExZIZCG=s32-c-mo" alt="profile"></a></div>
+            </div>
+            
         </header>
         <div>
             <img id="main-logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's Logo" style="padding: auto;">
@@ -51,7 +99,7 @@
             <div class="how-search-works"><a href="">How Search Works</a></div>
             <div class="privacy"><a href="">Privacy</a></div>
             <div class="terms"><a href="">Terms</a></div>
-            <div class="settings"><a href="">Settigns</a></div>
+            <div class="settings"><a href="">Settings</a></div>
         </footer>
     </main>
 </body>
