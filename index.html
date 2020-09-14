@@ -32,6 +32,8 @@
             width: 100%;
             display: inline-flex;
             align-items: center;
+            font-family: arial,sans-serif;
+            font-size: 13px;
         }
 
         .about, .store, .gmail, .images {
@@ -64,6 +66,7 @@
             display: block;
             margin: auto;
             width: 482px;
+            margin-top: 40px;
         }
 
         .search-area {
@@ -100,6 +103,10 @@
             opacity: 75%;
             position: absolute;
             bottom: 0px;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            background: #f2f2f2;
+            border-top: 1px solid #e4e4e4;
         }
         .privacy, .terms, .settings, .advertising, .business, .how-search-works {
             padding: 10px;
@@ -128,22 +135,22 @@
                 <div class="search-row">
                     <div class="search-area">
                         <div class="magnifying-glass">
-                            0~
+                            <img src="magnifying-glass.png">
                         </div>
                         <div class="input">
-                            Input
+                            <input class="user-input" palceholder="user-input" value="search">
                         </div>
                         <div class="microphone">
-                            mic.
+                            <a href=""><img src="microphone.png"></a>
                         </div>
                     </div> 
                 </div>
                 <div class="buttons">
                     <div class="button1">
-                        Button 1
+                        <button type="button">Google Search</button>
                     </div>
                     <div class="button2">
-                        Button 2
+                        <button type="button">I'm feeling lucky</button>
                     </div>
                 </div>
             </div>
