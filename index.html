@@ -3,22 +3,43 @@
     <title>Google Clone</title>
     <link href="reset.css" rel="stylesheet" type="text/css" media="all"/>
     <style>
-        .header, .page, .footer {
-            border: 3px solid black;
+        a:link {
+            color: #000;
+            text-decoration: none;
+            cursor: default;
         }
 
-        .above-logo, .logo, .search-area, .buttons, .below-action {
-            border: 2px solid darkgrey;
+        a:visited {
+            color: #000;
+            text-decoration: none;
+            cursor: default;
         }
 
-        .magnifying-glass, .input, .microphone {
-            border: 1px solid grey;
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+            cursor: default;
         }
-        
+
+        a:active {
+            color: #000;
+            text-decoration: none;
+            cursor: default;
+        }
+
         .header {
-            height: 10vh;
+            height: 40px;
             width: 100%;
             display: inline-flex;
+            align-items: center;
+        }
+
+        .about, .store, .gmail, .images {
+            opacity: 75%;
+        }
+
+        .about, .store, .gmail, .images, .other-apps, .profile {
+            padding: 10px;
         }
 
         .store {
@@ -26,18 +47,10 @@
         }
 
         .page {
-            height: 80vh;
-        }
-
-        .footer {
-            height: 10vh;
-        }
-
-        .above-logo {
-            height: 109px;
         }
 
         .logo {
+            margin-top: 109px;
         }
         
         .logo-img {
@@ -64,20 +77,36 @@
         }
 
         .magnifying-glass {
+            margin-left: 15px;
         }
 
         .microphone {
+            margin-right: 15px;
         }
 
         .buttons {
+            margin-top: 20px;
             height: 5%;
             width: 100%;
             display: inline-flex;
             justify-content: center;
         }
 
-        .below-action {
-            height: 1fr;
+        .footer {
+            height: 40px;
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            opacity: 75%;
+            position: absolute;
+            bottom: 0px;
+        }
+        .privacy, .terms, .settings, .advertising, .business, .how-search-works {
+            padding: 10px;
+        }
+
+        .how-search-works {
+            margin-right: auto;
         }
     </style>
 </head>
@@ -92,9 +121,6 @@
             <div class="profile"><a href=""><img class="profile-image" src="https://lh3.googleusercontent.com/ogw/ADGmqu9Uob8gkEh9L9R76ET1SkYj7k0tJHd-JExZIZCG=s32-c-mo" alt="profile"></a></div>
         </div>
         <div class="page">
-            <div class="above-logo">
-                Above logo
-            </div>
             <div class="action">
                 <div class="logo">
                     <img class="logo-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's Logo">
@@ -121,12 +147,14 @@
                     </div>
                 </div>
             </div>
-            <div class="below-action">
-                Below-Action
-            </div>
         </div>
         <div class="footer">
-            Footer
+            <div class="advertising"><a href="">Advertising</a></div>
+            <div class="business"><a href="">Business</a></div>
+            <div class="how-search-works"><a href="">How Search Works</a></div>
+            <div class="privacy"><a href="">Privacy</a></div>
+            <div class="terms"><a href="">Terms</a></div>
+            <div class="settings"><a href="">Settings</a></div>
         </div>
     </main>
 </body>
