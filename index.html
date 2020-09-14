@@ -3,152 +3,114 @@
     <title>Google Clone</title>
     <link href="reset.css" rel="stylesheet" type="text/css" media="all"/>
     <style>
-        body {
-            background: #fff;
+        .header, .page, .footer {
+            border: 3px solid black;
         }
 
-        .center {
-            margin-left: auto;
-            margin-right: auto;
+        .above-logo, .logo, .search-area, .buttons, .below-action, .search-row {
+            border: 2px solid darkgrey;
+        }
+
+        .magifying-glass, .input, .microphone {
+            border: 1px solid grey;
+        }
+        
+        .header {
+            height: 10vh;
+        }
+
+        .page {
+            height: 80vh;
+        }
+
+        .footer {
+            height: 10vh;
+        }
+
+        .above-logo {
+            height: 109px;
+        }
+
+        .logo {
+            height: 92px;
+        }
+        
+        .search-row {
+            height: 52px;
             display: block;
-        }
-
-        header, footer {
-            width: 100%;
-            display: inline-flex;
-            justify-content: space-around;
-        }
-        .header-right {
-            display: inline-flex;
-            justify-content: flex-end;
-            width: 50%;
-            padding: 20px;
-        }
-        
-        .header-left {
-            display: inline-flex;
-            justify-content: flex-start;
-            width: 50%;
-            padding: 20px;
-        }
-        footer {
-            border-top: 1px solid #e4e4e4;
-            background: #f2f2f2;
-            position: absolute;
-            margin-top: 33vh;
-        }
-        .footer-right {
-            display: inline-flex;
-            width: 50%;
-            justify-content: flex-end;
-        }
-        .footer-left {
-            display: inline-flex;
-            width: 50%;
-            justify-content: flex-start;
-        }
-
-        .profile-image {
-            border-radius: 50%;
-        }
-
-        #main-logo {margin-top: 125px}
-
-        a:link {
-            color: rgba(0,0,0,0.87);
-            text-decoration: none;
-            font-family: arial,sans-serif;
-        }
-
-        a:visited {
-            color: rgba(0,0,0,0.87);
-            text-decoration: none;
-            font-family: arial,sans-serif;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        a:active {
-            color: rgba(0,0,0,0.87);
-        }
-
-        .about {
-            padding: left 15px;
-        }
-        .about, .store, .gmail, .images, .other-apps, .profile {
-            padding: 5px;
-            font-size: 14px;
-        }
-        
-        .other-apps-img {
-            height: 30px;
-        }
-
-        .advertising, .business, .how-search-works, .privacy, .terms, .settings {
-            padding: 15px;
-            font-size: 12px;
-            color: rgb(95, 99, 104);
-        }
-        
-        .search-form {
-            background: #fff;
-            border: 1px solid #dfe1e5;
-            box-shadow: none;
-            border-radius: 24px;
-            height: 44px;
+            margin: auto;
             width: 482px;
         }
 
-        .search-input {
-            box-shadow: none;
-            height: 37px;
-            width: 387px;
-            margin-top: 0px;
+        .search-area {
+            height: 100%;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+        }
+
+        .magnifying-glass {
+        }
+
+        .microphone {
+        }
+
+        .buttons {
+            height: 5%;
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+        }
+
+        .below-action {
+            height: 1fr;
         }
     </style>
 </head>
 <body>
     <main>
-        <header>
-            <div class="header-left">
-                <div class="about"><a href="">About</a></div>
-                <div class="store"><a href="">Store</a></div>  
-            </div>
-            <div class="header-right">
-                <div class="gmail"><a href="">Gmail</a></div>
-                <div class="images"><a href="">Images</a></div>
-                <div class="other-apps"><a href=""><img class="other-apps-img" src="other-apps.png" alt="Other Apps"></a></div>
-                <div class="profile"><a href=""><img class="profile-image" src="https://lh3.googleusercontent.com/ogw/ADGmqu9Uob8gkEh9L9R76ET1SkYj7k0tJHd-JExZIZCG=s32-c-mo" alt="profile"></a></div>
-            </div>
-            
-        </header>
-        <div>
-            <img id="main-logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's Logo" style="padding: auto;">
-            <form class="center">
-                <div class="center search-form">
-                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 15px;">
-                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                    </svg>
-                    <input class="center search-input" type="search">
-                </div>
-                <br>
-                <button class="center" type="sumbit">Google Search</button>
-                <button class="center" type="submit">I'm Feeling Lucky</button>
-            </form>
+        <div class="header">
+            <a href="">A</a>
         </div>
-        <footer>
-            <div class="footer-left">
-                <div class="advertising"><a href="">Advertising</a></div>
-                <div class="business"><a href="">Business</a></div>
-                <div class="how-search-works"><a href="">How Search Works</a></div>
+        <div class="page">
+            <div class="above-logo">
+                Above logo
             </div>
-            <div class="footer-right">
-                <div class="privacy"><a href="">Privacy</a></div>
-                <div class="terms"><a href="">Terms</a></div>
-                <div class="settings"><a href="">Settings</a></div>
+            <div class="action">
+                <div class="logo">
+                    Logo
+                </div>
+                <div class="search-row">
+                    <div class="search-area">
+                        <div class="magnifying-glass">
+                            0~
+                        </div>
+                        <div class="input">
+                            Input
+                        </div>
+                        <div class="microphone">
+                            mic.
+                        </div>
+                    </div> 
+                </div>
+                <div class="buttons">
+                    <div class="button1">
+                        Button 1
+                    </div>
+                    <div class="button2">
+                        Button 2
+                    </div>
+                </div>
             </div>
-        </footer>
+            <div class="below-action">
+                Below-Action
+            </div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
     </main>
 </body>
