@@ -34,18 +34,32 @@
             align-items: center;
             font-family: arial,sans-serif;
             font-size: 13px;
+            margin-top: 15px;
         }
 
         .about, .store, .gmail, .images {
             opacity: 75%;
         }
 
+        .about, .advertising {
+            margin-left: 15px;
+        }
+
+        .profile, .settings {
+            margin-right: 15px;
+        }
+
         .about, .store, .gmail, .images, .other-apps, .profile {
             padding: 10px;
         }
 
+
         .store {
             margin-right: auto;
+        }
+
+        .profile-image {
+            border-radius: 50%;
         }
 
         .page {
@@ -78,6 +92,14 @@
             border: 1px solid #dfe1e5;
             border-radius: 24px;
         }
+        
+        .user-input {
+            outline: none;
+            border: none;
+            width: 387px;
+            height: 34px;
+            font-size: 16px;
+        }
 
         .magnifying-glass {
             margin-left: 15px;
@@ -93,6 +115,17 @@
             width: 100%;
             display: inline-flex;
             justify-content: center;
+        }
+
+        .button1, .button2 {
+            width: 140px;
+            height: 34px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: rgb(242, 242, 242);
+            border: 1px solid rgb(242, 242, 242);
+            font-size: 14px;
+            color: rgb(95, 99, 104)
         }
 
         .footer {
@@ -124,7 +157,7 @@
             <div class="store"><a href="">Store</a></div>  
             <div class="gmail"><a href="">Gmail</a></div>
             <div class="images"><a href="">Images</a></div>
-            <div class="other-apps"><a href=""><img class="other-apps-img" src="other-apps.png" alt="Other Apps"></a></div>
+            <div class="other-apps"><a href=""><img class="other-apps-img" src="other-apps.png" style="height: 20px;" alt="Other Apps"></a></div>
             <div class="profile"><a href=""><img class="profile-image" src="https://lh3.googleusercontent.com/ogw/ADGmqu9Uob8gkEh9L9R76ET1SkYj7k0tJHd-JExZIZCG=s32-c-mo" alt="profile"></a></div>
         </div>
         <div class="page">
@@ -135,23 +168,20 @@
                 <div class="search-row">
                     <div class="search-area">
                         <div class="magnifying-glass">
-                            <img src="magnifying-glass.png">
+                            <img src="magnifying-glass.png" style="height: 20px;">
                         </div>
                         <div class="input">
-                            <input class="user-input" palceholder="user-input" value="search">
+                            <input class="user-input">
                         </div>
                         <div class="microphone">
-                            <a href=""><img src="microphone.png"></a>
+                            <a href=""><img src="microphone.png" style="height: 24px;"></a>
                         </div>
                     </div> 
                 </div>
                 <div class="buttons">
-                    <div class="button1">
-                        <button type="button">Google Search</button>
-                    </div>
-                    <div class="button2">
-                        <button type="button">I'm feeling lucky</button>
-                    </div>
+                    <button class="button1" type="button">Google Search</button>
+                    <div style="width: 10px;"></div>
+                    <button class="button2" type="button">I'm Feeling Lucky</button>
                 </div>
             </div>
         </div>
